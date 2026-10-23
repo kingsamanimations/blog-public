@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post | My Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header><a href="index.html">My Blog</a></header>
+    <main>
+        <p id="status">Loading...</p>
+
+        <article id="post" hidden>
+            <h1 id="title"></h1>
+            <time id="date"></time>
+            <div id="content" class="content"></div>
+        </article>
+
+        <section id="comments-section" hidden>
+            <h2>Comments</h2>
+            <ul id="comments" class="comment-list"></ul>
+
+            <form id="comment-form">
+                <h3>Leave a comment</h3>
+                <label>Name <input name="username" required maxlength="50"></label>
+                <label>Comment <textarea name="content" rows="4" required></textarea></label>
+                <button type="submit">Post comment</button>
+                <p id="form-error" class="error" role="alert"></p>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="js/post.js"></script>
+</body>
+</html>
